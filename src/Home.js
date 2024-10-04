@@ -1,11 +1,10 @@
 
 function Home(){
     return (
-        <>
-        
-        
-        <h1>Welcome to the Food Emporium </h1>
-        </>
+        <div className="homeContainer">
+            <h1>Welcome to the Food Emporium </h1>
+            
+        </div>
     )
 }
 export default Home
