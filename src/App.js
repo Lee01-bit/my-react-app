@@ -1,10 +1,10 @@
-import{BrowserRouter, Routes, Route} from "react-router-dom"
+import{BrowserRouter, Routes, Route, Switch} from "react-router-dom"
 import Home from "./components/Home";
 import About from "./components/About";
 import Userprofile from "./components/userProfile";
 import Footer from "./components/Footer.";
 import NavBar from "./components/navBar";
-import CardItem from "./components/MenuItem"
+import LoginSignup from "./components/SignIn"
 
 
 
@@ -14,16 +14,16 @@ function App(){
       <BrowserRouter>
           <NavBar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<LoginSignup/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/Userprofile" element={<Userprofile/>}/>
         </Routes>
+        
+
       </BrowserRouter>
-      <CardItem></CardItem>
 
-
-      
-      <Footer></Footer>
+      <Footer/>
       
     </>
   )
