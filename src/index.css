@@ -24,6 +24,10 @@ body{
   height: 50vh;
 
 }
+.homeHeader{
+  margin: 20px;
+  padding: 10px;
+}
 
 button{
 font-family: cursive;
@@ -102,7 +106,7 @@ margin: 40px auto;
 .menuItem {
   border-radius: 15px;
   width: 300px;
-  height: 500px;
+  height: 400px;
   margin: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
@@ -154,8 +158,8 @@ margin: 40px auto;
 
 .aboutBottom p {
   width: 100%;
-  font-size: 1.5rem;
-  word-spacing: 15px;
+  font-size: 1.4rem;
+  word-spacing: 10px;
   padding: 10px;
 
 
@@ -163,11 +167,16 @@ margin: 40px auto;
 
 .about .aboutBottom h1 {
   font-weight: 500;
-  font-size: 70px;
-  color: black;
-  height: 50px;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  height: 100px;
   display: flex;
   justify-content: center;
+  
 }
 
-
+.usersProfile{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}

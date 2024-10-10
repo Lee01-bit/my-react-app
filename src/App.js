@@ -1,14 +1,15 @@
 import{BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./components/Home";
 import About from "./components/About";
-import Userprofile from "./components/userProfile";
+import Userprofile from "./components/UserProfile";
 import Footer from "./components/Footer.";
 import NavBar from "./components/navBar";
 import LoginSignup from "./components/SignIn"
 
 
 
-function App(){
+
+function App({selectedItems, menuItem}){
   return(
     <>
       <BrowserRouter>
@@ -17,7 +18,7 @@ function App(){
           <Route path="/" element={<LoginSignup/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/Userprofile" element={<Userprofile/>}/>
+          <Route path="/Userprofile" element={<Userprofile />}/>
         </Routes>
         
 
