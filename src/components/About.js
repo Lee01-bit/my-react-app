@@ -1,5 +1,6 @@
 import React from "react";
 import Picture from "../food.jpeg"
+
 function About(){
     return(
         <div className="about">

@@ -1,7 +1,7 @@
 import{BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./components/Home";
 import About from "./components/About";
-import Userprofile from "./components/UserProfile";
+import UserProfile from "./components/UserProfile";
 import Footer from "./components/Footer.";
 import NavBar from "./components/navBar";
 import LoginSignup from "./components/SignIn"
@@ -9,7 +9,7 @@ import LoginSignup from "./components/SignIn"
 
 
 
-function App({selectedItems, menuItem}){
+function App(){
   return(
     <>
       <BrowserRouter>
@@ -18,7 +18,7 @@ function App({selectedItems, menuItem}){
           <Route path="/" element={<LoginSignup/>}/>
           <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/Userprofile" element={<Userprofile />}/>
+          <Route path="/Userprofile" element={<UserProfile />}/>
         </Routes>
         
 
