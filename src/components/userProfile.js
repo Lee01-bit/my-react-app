@@ -7,8 +7,6 @@ import chickenPotPie from "../images/Beef-Guiness-Pie-300px.jpg"
 
 
 
-
-
 function UserProfile() {
      
 

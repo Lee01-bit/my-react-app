@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CardItem from "./CardItem";
 import { Burgers , ComfortFoods, Pizza } from "../menuItems/MenuList";
-import UserProfile from "./UserProfile";
+
+
 
 function Home(){
     const [selectedItems, setSelectedItems] = useState([]);
@@ -13,6 +14,7 @@ function Home(){
     useEffect(() => {
         // This could be where you send data to a backend or update context
         console.log("Selected items updated:", selectedItems);
+        
     }, [selectedItems]);
 
     return (
