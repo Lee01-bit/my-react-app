@@ -5,6 +5,8 @@ import UserProfile from "./components/userProfile";
 import Footer from "./components/Footer.";
 import NavBar from "./components/navBar";
 import LoginSignup from "./components/SignIn"
+import { Cart } from "./components/cart";
+import { CartProvider } from "./components/CartContext";
 
 
 
@@ -12,6 +14,7 @@ import LoginSignup from "./components/SignIn"
 function App(){
   return(
     <>
+    <CartProvider>
       <BrowserRouter>
           <NavBar/>
         <Routes>
@@ -19,12 +22,12 @@ function App(){
           <Route path="/home" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/Userprofile" element={<UserProfile />}/>
+          <Route path="/cart" element={<Cart/>}/>
         </Routes>
         
-
       </BrowserRouter>
-
       <Footer/>
+      </CartProvider>
       
     </>
   )
